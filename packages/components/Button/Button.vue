@@ -9,6 +9,8 @@ defineOptions({
   name: "ErButton",
 });
 
+console.log("button");
+
 const props = withDefaults(defineProps<ButtonProps>(), {
   tag: "button",
   nativeType: "button",
@@ -39,6 +41,9 @@ const handleBtnClickThrottle = throttle(
 
 defineExpose<ButtonInstance>({
   ref: _ref,
+  disabled,
+  size,
+  type,
 });
 </script>
 

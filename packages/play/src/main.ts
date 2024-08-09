@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import ToyElement from "toy-element"
-import "toy-element/dist/index.css"
+import ToyElementUi from "toy-design-ui"
+import "toy-design-ui/dist/index.css"
 
-createApp(App).use(ToyElement).mount('#app')
+createApp(App).use(ToyElementUi).mount('#app')
